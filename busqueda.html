@@ -14,7 +14,6 @@
             <ul>
                 <li><a href="index.html" id="home-link"><i class="fas fa-home"></i> Inicio</a></li>
                 <li><a href="categorias.html" id="categories-link"><i class="fas fa-list"></i> Categorías</a></li>
-                <li><a href="busqueda.html" id="search-link"><i class="fas fa-search"></i> Búsqueda</a></li>
                 <li>
                     <select id="language-select">
                         <option value="es">Español</option>
@@ -34,6 +33,7 @@
         <p id="footer-text">Proveedores: Proveedor 1, Proveedor 2, Proveedor 3...</p>
     </footer>
     <script src="javascript/scripts.js"></script>
+    <script src="javascript/search.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);
@@ -42,20 +42,20 @@
 
             const products = {
                 hombre: [
-                    { name: 'Camisa Hombre', price: '$19.99', image: 'producto1.jpg' },
-                    { name: 'Pantalón Hombre', price: '$29.99', image: 'producto2.jpg' }
+                    { name: 'Camisa Hombre', price: '$19.99', image: 'image/ropa1.png' },
+                    { name: 'Pantalón Hombre', price: '$29.99', image: 'image/ropa2.png' }
                 ],
                 mujer: [
-                    { name: 'Blusa Mujer', price: '$19.99', image: 'producto3.jpg' },
-                    { name: 'Falda Mujer', price: '$29.99', image: 'producto4.jpg' }
+                    { name: 'Blusa Mujer', price: '$19.99', image: 'image/ropa3.png' },
+                    { name: 'Falda Mujer', price: '$29.99', image: 'image/ropa4.png' }
                 ],
                 accesorios: [
-                    { name: 'Sombrero', price: '$9.99', image: 'producto5.jpg' },
-                    { name: 'Bufanda', price: '$14.99', image: 'producto6.jpg' }
+                    { name: 'Sombrero', price: '$9.99', image: 'image/ropa2.png' },
+                    { name: 'Bufanda', price: '$14.99', image: 'image/ropa1.png' }
                 ],
                 calzado: [
-                    { name: 'Zapatos', price: '$39.99', image: 'producto7.jpg' },
-                    { name: 'Botas', price: '$49.99', image: 'producto8.jpg' }
+                    { name: 'Zapatos', price: '$39.99', image: 'image/ropa4.png' },
+                    { name: 'Botas', price: '$49.99', image: 'image/ropa3.png' }
                 ]
             };
 

@@ -1,17 +1,20 @@
-:root{
-    
+:root {
+    --body:#f4f4f4;
+    --header:#232f3e;
+    --letras:white;
+    --button:#f39c12;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--body);
 }
 
 header {
-    background-color: #232f3e;
-    color: white;
+    background-color: var(--header) ;
+    color: var(--letras);
     padding: 10px 0;
     text-align: center;
 }
@@ -31,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--letras);
     text-decoration: none;
 }
 
@@ -47,9 +50,9 @@ nav ul li a {
 
 .search-bar button {
     padding: 10px;
-    background-color: #ff9900;
+    background-color: var(--button);
     border: none;
-    color: white;
+    color: var(--letras);
     cursor: pointer;
 }
 
@@ -92,13 +95,12 @@ footer {
     background-color: #232f3e;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+
 }
-
-
 
 
 /*Categorias pagina*/
@@ -110,7 +112,7 @@ footer {
 }
 
 .category-list li {
-    background-color: #ff9900;
+    background-color: var(--button);
     color: white;
     padding: 10px;
     margin: 10px 0;
@@ -133,7 +135,7 @@ footer {
 
 .category-buttons button {
     padding: 10px 20px;
-    background-color: #ff9900;
+    background-color: var(--button);
     border: none;
     color: white;
     cursor: pointer;
