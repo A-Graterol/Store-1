@@ -10,4 +10,4 @@
 
 <h3 align="left">:hammer:Funcionalidades del proyecto</h3>
 
-- `Funcionalidad 1`: descripción de la funcionalidad 1- `Funcionalidad 2`: descripción de la funcionalidad 2- `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 2- `Funcionalidad 3`: descripción de la funcionalidad 3
+- `Funcionalidad 1`: La página está en desarrollo para ser usada como presentación e interfaz de una tienda de ropa.- `Funcionalidad 2`: descripción de la funcionalidad 2- `Funcionalidad 2`: La página contará en un futuro com una base de datos para las imágenes no estén localmente y estén en un servidor aparte de igual forma tendrá la construcción de su BD- `Funcionalidad 3`: La Página cuenta con 3 pestañas 1 donde se aprecia la página principal, otra donde tiene la sección de categorías de ropas y la última el buscador de resultados que aporta a la hora de buscar u. producto 
