@@ -15,18 +15,23 @@
                 <li><a href="index.html" id="home-link"><i class="fas fa-home"></i> Inicio</a></li>
                 <li><a href="categorias.html" id="categories-link"><i class="fas fa-list"></i> Categorías</a></li>
                 <li><a href="busqueda.html" id="search-link"><i class="fas fa-search"></i> Búsqueda</a></li>
-
+                <li>
+                    <select id="language-select">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Categorías</h1>
-        <ul class="category-list">
-            <li><i class="fas fa-male"></i> Ropa de Hombre</li>
-            <li><i class="fas fa-female"></i> Ropa de Mujer</li>
-            <li><i class="fas fa-hat-cowboy"></i> Accesorios</li>
-            <li><i class="fas fa-shoe-prints"></i> Calzado</li>
-        </ul>
+        <div class="category-buttons">
+            <button onclick="searchCategory('hombre')"><i class="fas fa-male"></i> Ropa de Hombre</button>
+            <button onclick="searchCategory('mujer')"><i class="fas fa-female"></i> Ropa de Mujer</button>
+            <button onclick="searchCategory('accesorios')"><i class="fas fa-hat-cowboy"></i> Accesorios</button>
+            <button onclick="searchCategory('calzado')"><i class="fas fa-shoe-prints"></i> Calzado</button>
+        </div>
     </main>
     <footer>
         <p id="footer-text">Proveedores: Proveedor 1, Proveedor 2, Proveedor 3...</p>

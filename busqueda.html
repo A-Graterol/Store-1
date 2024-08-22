@@ -15,21 +15,65 @@
                 <li><a href="index.html" id="home-link"><i class="fas fa-home"></i> Inicio</a></li>
                 <li><a href="categorias.html" id="categories-link"><i class="fas fa-list"></i> Categorías</a></li>
                 <li><a href="busqueda.html" id="search-link"><i class="fas fa-search"></i> Búsqueda</a></li>
-
+                <li>
+                    <select id="language-select">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Resultados de Búsqueda</h1>
-        <div class="grid">
-            <!-- Aquí irán los productos en una cuadrícula de 4x6 -->
+        <div class="products-grid" id="products-grid">
+            <!-- Aquí se mostrarán los productos -->
         </div>
     </main>
     <footer>
-        <p>Proveedores: Proveedor 1, Proveedor 2, Proveedor 3...</p>
+        <p id="footer-text">Proveedores: Proveedor 1, Proveedor 2, Proveedor 3...</p>
     </footer>
-
     <script src="javascript/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('categoria');
+            const productsGrid = document.getElementById('products-grid');
 
+            const products = {
+                hombre: [
+                    { name: 'Camisa Hombre', price: '$19.99', image: 'producto1.jpg' },
+                    { name: 'Pantalón Hombre', price: '$29.99', image: 'producto2.jpg' }
+                ],
+                mujer: [
+                    { name: 'Blusa Mujer', price: '$19.99', image: 'producto3.jpg' },
+                    { name: 'Falda Mujer', price: '$29.99', image: 'producto4.jpg' }
+                ],
+                accesorios: [
+                    { name: 'Sombrero', price: '$9.99', image: 'producto5.jpg' },
+                    { name: 'Bufanda', price: '$14.99', image: 'producto6.jpg' }
+                ],
+                calzado: [
+                    { name: 'Zapatos', price: '$39.99', image: 'producto7.jpg' },
+                    { name: 'Botas', price: '$49.99', image: 'producto8.jpg' }
+                ]
+            };
+
+            if (products[category]) {
+                products[category].forEach(product => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'product-card';
+                    productCard.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <p>${product.name}</p>
+                        <p>${product.price}</p>
+                    `;
+                    productsGrid.appendChild(productCard);
+                });
+            } else {
+                productsGrid.innerHTML = '<p>No se encontraron productos en esta categoría.</p>';
+            }
+        });
+    </script>
 </body>
 </html>
