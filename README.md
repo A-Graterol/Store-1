@@ -1,8 +1,5 @@
 <h1 align="center"> Tienda Fashion Shop </h1>
 
-![my badge](https://badgen.net/
-badge/HTML/CSS)
-
 <p align="left">
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    </p>
