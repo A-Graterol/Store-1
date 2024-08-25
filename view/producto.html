@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="titulo" id="titulo"><img src="/public/image/Login.png" class="logo" alt="URBANZEN"> Detalles del Producto</div>
+            <nav>
+                <ul>
+                    <li><a href="/view/index.html" id="home-link">Inicio</a></li>
+                    <li><a href="/view/categorias.html" id="categories-link">Categorías</a></li>
+                    <li>
+                        <select id="language-select">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="product-details">
+                <img id="product-image" src="" alt="Imagen del Producto">
+                <div class="thumbnails">
+                    <img src="/public/image/ropa1.png" alt="Miniatura 1" class="thumbnail">
+                    <img src="/public/image/ropa2.png" alt="Miniatura 2" class="thumbnail">
+                    <img src="/public/image/ropa3.png" alt="Miniatura 3" class="thumbnail">
+                </div>
+                <h2 id="product-name"></h2>
+                <p id="product-price"></p>
+                <p id="product-description"></p>
+            </div>
+        </main>
+        <footer>
+            <button id="back-button">Regresar</button>
+            <button id="back-to-top">Subir al inicio</button>
+            <p id="footer-text">Proveedores: Proveedor 1, Proveedor 2, Proveedor 3...</p>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <script src="/public/js/scripts.js"></script>
+</body>
+</html>
